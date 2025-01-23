@@ -2,17 +2,18 @@
 using namespace std;
 
 int main(){
-    int n;
+    long long n;
     cin>>n;
-    int arr[n]; 
-     int sum = 0;
-     int ans;
-    for(int i =0; i<n;i++){
+    long long total = (n*(n+1))/2;
+    long long arr[n]; 
+     long long sum = 0;
+     long long ans;
+    for(int i =0; i<n-1;i++){
         cin>>arr[i];
-         sum = sum + arr[i];
+         ans = total - arr[i];
     }
    
-ans = (n*(n+1))/2 - sum;
+
 cout<<ans<<endl;
 
 }
