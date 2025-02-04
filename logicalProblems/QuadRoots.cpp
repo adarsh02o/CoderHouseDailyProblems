@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cmath>//for sqrt() function
+#include <iomanip> 
 
 using namespace std;
 
@@ -13,6 +14,8 @@ int main(){
         return 0;
     }
     discriminant = (b*b)-(4*a*c);
+     cout << fixed << setprecision(2); // to handle decimal limit upto 2
+     
 
     if(discriminant>0){
         root1 = (-b+sqrt(discriminant))/(2*a);
